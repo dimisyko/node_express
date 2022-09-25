@@ -1,0 +1,22 @@
+{
+   "detailPage" : [
+        {
+            "id": "crush",
+            "url" : "detail/crush",
+            "val" : "Voir plus detail 1",
+            "title": "Détail 1",
+            "p": "Contenu de la page detail 1",
+            "img" : "/img/crush1.webp",
+            "name_page": "crush"
+        },
+        {
+            "id": "social_network",
+            "url" : "detail/social_network",
+            "val" : "Voir plus detail 2",
+            "title": "Détail 2",
+            "p": "Contenu de la page detail 2",
+            "img": "/img/2.jpg",
+            "name_page": "social network"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+-const title = "Page 1"
+include ../components/head.pug
+
+    main.home
+        h1= title
+        section.home__list
+          each index in data.detailPage
+            a.home__img(href=index.url)
+              picture.home__picture
+               img(src=index.img, alt=index.alt)
+    
+
+    
