@@ -1,12 +1,12 @@
 -const title =  dataDetail.name_page
 include ../components/head.pug
-    
+
     if  dataDetail.img
      section.bloc 
        .bloc__txt
          h1.bloc__title= dataDetail.title
          p.bloc__paragraph= dataDetail.p
-         a(href="/") Retour accueil
+         a.bloc__next-detail(href=next.url)=next.title
        picture.bloc__img 
          img(src= dataDetail.img, alt= dataDetail.name_page)
     else
@@ -14,6 +14,6 @@ include ../components/head.pug
       .bloc__txt
         h1.bloc__title= dataDetail.title
         p.bloc__paragraph= dataDetail.p
-        a(href="/") Retour accueil
+        a.bloc__next-detail(href=next.url)=next.title
      
 include ../components/footer.pug
