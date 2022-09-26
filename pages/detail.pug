@@ -1,19 +1,19 @@
--const title = element.name_page
+-const title =  dataDetail.name_page
 include ../components/head.pug
     
-    if element.img
+    if  dataDetail.img
      section.bloc 
        .bloc__txt
-         h1.bloc__title=element.title
-         p.bloc__paragraph=element.p
+         h1.bloc__title= dataDetail.title
+         p.bloc__paragraph= dataDetail.p
          a(href="/") Retour accueil
        picture.bloc__img 
-         img(src=element.img, alt=element.name_page)
+         img(src= dataDetail.img, alt= dataDetail.name_page)
     else
      section.bloc 
       .bloc__txt
-        h1.bloc__title=element.title
-        p.bloc__paragraph=element.p
+        h1.bloc__title= dataDetail.title
+        p.bloc__paragraph= dataDetail.p
         a(href="/") Retour accueil
      
 include ../components/footer.pug

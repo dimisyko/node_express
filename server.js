@@ -23,11 +23,8 @@ app.get("/about", (req, res) => {
 })
 
 app.get("/detail/:id", (req, res) => {
-    data.detailPage.forEach(element => {
-        if (req.params.id === element.id) {
-            res.render('detail', { element })
-        }
-    })
+    const dataDetail = data.detailPage.find( data => data.id === req.params.id)
+    res.render('detail', { dataDetail })
 })
 app.use((req, res) => {
     res.status(404).render('404')
